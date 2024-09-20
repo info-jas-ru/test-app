@@ -30,10 +30,7 @@ devops
 - [Технологии](#технологии)
 - [Начало работы](#начало-работы)
 - [Тестирование](#тестирование)
-- [Deploy и CI/CD](#deploy-и-ci/cd)
-- [Contributing](#contributing)
-- [To do](#to-do)
-- [Команда проекта](#команда-проекта)
+- [Тестирование](#тестирование)
 
 ## Технологии
 - [PHP](https://www.php.net/)
@@ -44,21 +41,29 @@ devops
 
 ## Использование
 
-## Разработка
+## Требования
+- Composer v2.7+
+- NodeJS v20.0+
+- npm v10.0+
+- PHP v8.3+
 
-### Требования
-
-### Установка зависимостей
+## Запуск
 
 ### Запуск front
 - cd .\front\
 - npm install
 - npm start
+- [http://localhost:3000/](http://localhost:3000/)
 
 ### Запуск back
 - cd .\back\
+- php artisan serve
+- [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
+## Тестирование front
+- npm run build
 
-## Тестирование
+## Тестирование back
+- 
 
 ## Deploy и CI/CD
