@@ -50,9 +50,14 @@ devops
 
 ### Установка зависимостей
 
-### Запуск Development сервера
+### Запуск front
+- cd .\front\
+- npm install
+- npm start
 
-### Создание билда
+### Запуск back
+- cd .\back\
+
 
 ## Тестирование
 
