@@ -46,12 +46,14 @@ devops
 - PHP v8.3+
 
 ## Запуск
+Склонировать приложение git@github.com:info-jas-ru/test-app.git
 
 ### Запуск back
 - cd .\back\
 - composer install
 - php artisan migrate
 - php artisan serve
+- сгенерировать 10 рандомных пользователей [http://127.0.0.1:8000/api/generate_users/](http://127.0.0.1:8000/api/generate_users/)
 - [http://127.0.0.1:8000/api/users/](http://127.0.0.1:8000/api/users/)
 
 ### Запуск front
@@ -63,7 +65,9 @@ devops
 ## Тестирование
 
 ### Тестирование back
+- переименовать файл .env.example в .env
 - php artisan test
 
 ### Тестирование front
+- npm test
 - npm run build
