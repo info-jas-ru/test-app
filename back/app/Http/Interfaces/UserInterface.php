@@ -6,5 +6,5 @@ namespace App\Http\Interfaces;
 
 interface UserInterface
 {
-    public static function description(): string | null;
+    public static function description(): array | null;
 }

@@ -13,9 +13,18 @@ class UserDecorator implements UserInterface
         $this->model = $model;
     }
 
-    public static function description(): string
+    public static function description(): array
     {
+        $num = rand(1, 4);
+        $stack = array();
+
         $arr_desc=['php', 'js', 'golang', 'java'];
-        return $arr_desc[array_rand($arr_desc)];
+
+        for($i=1; $i<=$num; $i++){
+            array_push($stack, $arr_desc[array_rand($arr_desc)]);
+        }
+        $stack = array_unique($stack);
+        
+        return $stack;
     }
 }

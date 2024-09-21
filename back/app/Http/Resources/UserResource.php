@@ -22,6 +22,7 @@ class UserResource extends JsonResource
             'name' => $this->name,
             'email' => $this->email,
             // 'description' => $this->description,
+            // 'description' => [UserDecorator::description(), UserDecorator::description()],
             'description' => UserDecorator::description(),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,

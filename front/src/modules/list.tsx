@@ -66,7 +66,7 @@ const List: FC<ListProps> = ({open}) => {
                         <td>{r.id}</td>
                         <td>{r.name}</td>
                         <td>{r.email}</td>
-                        <td>{r.description}</td>
+                        <td>{r?.description != undefined && r?.description?.length > 0 ? (r?.description?.map((x)=>[<span style={{marginRight: '5px'}}className="badge bg-info" key={x}>{x}</span>])):''}</td>
                         <td>{r.created_at}</td>
                         <td>{r.updated_at}</td>
                         </tr>

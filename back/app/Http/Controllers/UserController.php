@@ -14,7 +14,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 // 
 class UserController extends Controller implements UserInterface
 {
-    public static function description(): string | null
+    public static function description(): array | null
     {
         return null;
     }

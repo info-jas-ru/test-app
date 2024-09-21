@@ -47,21 +47,23 @@ devops
 
 ## Запуск
 
+### Запуск back
+- cd .\back\
+- composer install
+- php artisan migrate
+- php artisan serve
+- [http://127.0.0.1:8000/api/users/](http://127.0.0.1:8000/api/users/)
+
 ### Запуск front
 - cd .\front\
 - npm install
 - npm start
 - [http://localhost:3000/](http://localhost:3000/)
 
-### Запуск back
-- cd .\back\
-- php artisan serve
-- [http://127.0.0.1:8000/api/users/](http://127.0.0.1:8000/api/users/)
-
 ## Тестирование
+
+### Тестирование back
+- php artisan test
 
 ### Тестирование front
 - npm run build
-
-### Тестирование back
-- 
